@@ -1,0 +1,249 @@
+.simple .question_header {
+    padding: 0.25rem 0.5rem;
+    background: #e6e6e6;
+    display: flex;
+    align-items: top;
+}
+
+.simple .question_header .question_num {
+    color: #808080;
+    padding-right: 10px;
+    font-size: 30px;
+    vertical-align: middle;
+    min-width: 40px;
+}
+
+.simple .question_header .question_context {
+    display: flex;
+    align-items: center;
+}
+
+
+/*ラジオボタン*/
+
+.simple input[type=radio] {
+    display: none;
+    /*checked時の見た目*/
+}
+
+.simple input[type=radio]+span::before {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    content: "";
+    display: flex;
+    border-radius: 17px;
+    vertical-align: middle;
+    border: 2px solid #dddddd;
+    background-color: #f0f0f0;
+    margin: -2px 5px 0 0;
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+}
+
+.simple input[type=radio]:checked+span::before {
+    border-color: #36bbe7 !important;
+    background-color: #36bbe7 !important;
+    box-shadow: inset 0 0 0 7px #fff;
+}
+
+
+/*チェックボックス*/
+
+.simple input[type=checkbox] {
+    display: none;
+    /*checked時の見た目*/
+}
+
+.simple .answer {
+    padding: 0.35rem 0.5rem;
+}
+
+.simple label span {
+    cursor: pointer;
+    /*通常時の見た目*/
+    display: flex;
+    align-items: center;
+    /*hover時の見た目*/
+}
+
+.simple input[type=checkbox]+span::before {
+    width: 34px;
+    height: 34px;
+    line-height: 32px;
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    content: "✓";
+    color: transparent;
+    padding: 0;
+    border-radius: 5px;
+    border: 2px solid #dddddd;
+    background: #f0f0f0;
+    margin: -2px 5px 0 0;
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.simple input[type=checkbox]:checked+span::before {
+    font-size: 14px;
+    background: #fff !important;
+    border-color: #36bbe7 !important;
+    color: #36bbe7 !important;
+}
+
+
+/*太い文字用ラジオボタン*/
+
+.simple input[type=radio]+strong::before {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    content: "";
+    border-radius: 17px;
+    vertical-align: middle;
+    border: 2px solid #dddddd;
+    background-color: #f0f0f0;
+    margin: -2px 5px 0 0;
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+}
+
+.simple input[type=radio]:checked+strong::before {
+    border-color: #36bbe7 !important;
+    background-color: #36bbe7 !important;
+    box-shadow: inset 0 0 0 7px #fff;
+}
+
+
+/*太い文字用チェックボタン*/
+
+.simple input[type=checkbox]+strong::before {
+    width: 34px;
+    height: 34px;
+    line-height: 32px;
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    content: "✓";
+    color: transparent;
+    padding: 0;
+    border-radius: 5px;
+    border: 2px solid #dddddd;
+    background: #f0f0f0;
+    margin: -2px 5px 0 0;
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.simple input[type=checkbox]:checked+strong::before {
+    font-size: 14px;
+    background: #fff !important;
+    border-color: #36bbe7 !important;
+    color: #36bbe7 !important;
+}
+
+
+/*ふと文字のチェック時*/
+
+.simple label span strong {
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+}
+
+.simple label strong {
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+}
+
+.simple label strong span {
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+}
+
+
+/*イタリックのチェック時*/
+
+.simple label span em {
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+}
+
+.simple label em {
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+}
+
+.simple label em span {
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+}
+
+
+/*イタリック文字用ラジオボタン*/
+
+.simple input[type=radio]+em::before {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    content: "";
+    border-radius: 17px;
+    vertical-align: middle;
+    border: 2px solid #dddddd;
+    background-color: #f0f0f0;
+    margin: -2px 5px 0 0;
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+}
+
+.simple input[type=radio]:checked+em::before {
+    border-color: #36bbe7 !important;
+    background-color: #36bbe7 !important;
+    box-shadow: inset 0 0 0 7px #fff;
+}
+
+
+/*太い文字用チェックボタン*/
+
+.simple input[type=checkbox]+em::before {
+    width: 34px;
+    height: 34px;
+    line-height: 32px;
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    content: "✓";
+    color: transparent;
+    padding: 0;
+    border-radius: 5px;
+    border: 2px solid #dddddd;
+    background: #f0f0f0;
+    margin: -2px 5px 0 0;
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.simple input[type=checkbox]:checked+em::before {
+    font-size: 14px;
+    background: #fff !important;
+    border-color: #36bbe7 !important;
+    color: #36bbe7 !important;
+}
